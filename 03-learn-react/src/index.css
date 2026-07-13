@@ -1,0 +1,99 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+
+
+}
+
+
+.parent{
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card{
+  margin: 10px;
+  height: 290px;
+  width: 220px;
+  background-color: rgb(231, 229, 229);
+  border-radius: 35px;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card .top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+.top img{
+  height: 60px;
+  width: 60px;
+  border: none;
+  
+  border-radius: 50px;
+}
+
+
+
+.bottom{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+.bottom button{
+  padding: 5px 9px;
+  background-color: black;
+  color: aliceblue;
+  border: none;
+}
+
+.top button{
+  display: flex;
+  align-items: center;
+  padding: 4px 9px;
+  border: none;
+  border-radius: 5px;
+  color: rgb(106, 109, 109);
+}
+
+.center h3{
+  font-size: 17px;
+}
+
+.center h2{
+  font-size: 20px;
+}
+
+
+.center .tag{
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.center .tag h4{
+  font-size: 12px;
+  background-color: rgb(175, 173, 173);
+  padding: 2px 7px;
+  border-radius: 5px;
+}
+
+.bottom p{
+  font-size: 14px;
+  color: rgb(90, 89, 89);
+}

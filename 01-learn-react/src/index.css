@@ -1,0 +1,24 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+ 
+body{
+  background-color: rgb(247, 243, 243);
+}
+.card{
+  width: 50vw;
+  border: 2px solid white;
+  margin: 20px auto;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: aqua;
+  
+}
+
+.nav{
+  background-color: black;
+  color: antiquewhite;
+  margin: 2px;
+  padding: 5px;
+}
