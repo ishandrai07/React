@@ -10,6 +10,7 @@ import Mens from './pages/Mens'
 import Womens from './pages/Womens'
 import Courses from './pages/Courses'
 import CoursesDetails from './pages/CoursesDetails'
+import Navbar2 from './components/Navbar2'
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
 
       <div className='h-screen bg-black text-amber-50'>
         <Navbar />
+        <Navbar2 />
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
