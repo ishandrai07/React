@@ -4,8 +4,12 @@ import Footer from './components/Footer'
 import { Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import About from './pages/About'
-import Contact from './pages/Contact'
+import Product from './pages/Product'
 import Notfound from './pages/Notfound'
+import Mens from './pages/Mens'
+import Womens from './pages/Womens'
+import Courses from './pages/Courses'
+import CoursesDetails from './pages/CoursesDetails'
 
 const App = () => {
   return (
@@ -16,7 +20,16 @@ const App = () => {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
-          <Route path='/contact' element={<Contact />} />
+
+          //NESTED ROUTE
+          <Route path='/product' element={<Product />} >
+          <Route path='mens' element={<Mens />} />
+          <Route path='womens' element={<Womens />} />
+          </Route>
+
+          <Route path='/courses' element={<Courses />} />
+          <Route path='/courses/:id' element={<CoursesDetails />} />  // Dynamic routing
+          
           <Route path='*' element={<Notfound />} />
         </Routes>
         <Footer />
